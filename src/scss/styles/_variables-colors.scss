@@ -1,0 +1,32 @@
+// Website Variables and Colours
+
+$headerColorSticky: #fff;
+$logoColor:  #FFD460;
+
+$first: #3EC1D3;
+$second: #F6F7D7;
+$third: #FF9A00;
+$fourth: #FF165D;
+
+$text: #3A4750;
+$linkhover: #FFD460;
+$iconColor: #3E588F;
+
+
+//Base Styles//
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 16px;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: $text;
+}
+a:hover{}

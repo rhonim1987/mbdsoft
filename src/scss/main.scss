@@ -1,0 +1,50 @@
+
+
+// Variables and Colors
+@import "styles/variables-colors";
+
+// Website / App Styles
+@import "styles/header";
+@import "styles/container";
+@import "styles/footer";
+
+
+//Web Style
+.main__wrapper{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.menu, .main__msg, .main__container, .footer{
+	padding: 0 4rem;
+}
+
+@media screen and (max-width: 800px) {
+	.main__container{
+		flex-direction: column;
+		.aside{
+			display: flex;
+			.aside__item{
+				flex: 1 1 auto;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 600px) {
+	.main__container{
+		.container__item{
+			flex-direction: column;
+		}
+	}
+		
+}
+@media screen and (max-width: 400px) {
+	.main__container{
+		flex-direction: column;
+		.aside{
+			display: flex;
+			flex-direction: column
+		}
+	}
+
+}

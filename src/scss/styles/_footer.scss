@@ -1,0 +1,12 @@
+// Footer
+.footer{
+	display: flex;
+	background-color: #000;
+	margin-top: 1rem;
+	align-items: center;
+	justify-content: center;
+	.social{
+		color: #fff;
+		padding: 1rem;
+	}
+}

@@ -1,0 +1,76 @@
+// Header
+.header{
+	background: url(../img/coffee-2354882_1920.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	.menu {
+		background-color: rgba(0,0,0,.1);
+		border-bottom: 1px solid rgba(255,255,255,.5);
+		display: flex;
+		flex-flow: row nowrap;
+		transition: height .5s ease;
+		.logo{
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			flex: 1 1 auto;
+			.logo--link{
+				color: #fff;
+				font-size: 1.5rem;
+				&:hover{
+					color: $logoColor;
+				}
+				strong{
+					color: $logoColor;
+				}
+			}
+			.logoSticky{
+				color: $text;
+			}
+		}
+		.nav{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex: 5 1 auto;
+			.nav--link{
+				color: #fff;
+				font-size: .8rem;
+				text-transform: uppercase;
+				padding: 2rem .5rem;
+				letter-spacing: .2rem;
+				&:hover{
+					color: $linkhover;
+				}
+			}
+			.navSticky{
+				color: $text;
+			}
+		}
+	}
+	.menuSticky{
+		position: fixed;
+		width: 100%;
+		background-color: $headerColorSticky;
+		border-bottom: 1px solid rgba(0,0,0,.5);
+	}
+	.main__msg{
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		.msg{
+			font-size: 1.5rem;
+			color: #fff;
+			font-weight: 300;
+			text-align: center;
+			line-height: 1.6;
+			background-color: rgba(0,0,0,.3);
+
+
+		}
+	}
+}

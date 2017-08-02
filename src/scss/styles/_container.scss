@@ -1,0 +1,31 @@
+.main__container{
+	height: 100vh;
+	display: flex;
+	.container__item{
+		display: flex;
+		flex-flow: row wrap;
+		flex: 2 1 auto;
+		.item{
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			justify-content: center;
+			flex: 1 1 33%;
+			.item__icon{
+				padding: 1rem 0;
+				.fa{
+					font-size: 4rem;
+					color: $iconColor;
+				}
+			}
+			.item__title{
+				font-size: 1.5rem;
+				text-transform: uppercase;
+			}
+			.item__info{
+				padding: 0.5rem 0;
+			}
+		}
+
+	}
+}
